@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--output_dir", "/data/pulkitag/models/idanshen/project/debug",
+                "--dataset_name", "openai/gsm8k",
+                "--dataset_train_split", "test",
+                "--per_device_decode_batch_size", "2",
+                "--model_name_or_path", "Qwen/Qwen2.5-3B-Instruct",
+                "--response_length", "512",
+                "--stop_token", "eos",
+            ],
+        }
+    ]
+}
